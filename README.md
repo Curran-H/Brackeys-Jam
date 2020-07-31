@@ -1,7 +1,7 @@
 # Brackeys-Jam
 
 ### **INSTRUCTIONS**
-If you've never used github before, or just need help setting up the github repository for the project (No shame), click here for a much more in-depth tutorial by *[Brackeys](https://www.youtube.com/watch?v=qpXxcvS-g3g)*.
+If you've never used github before, or just need help setting up the github repository for the project (no shame), click here for a much more in-depth tutorial by *[Brackeys](https://www.youtube.com/watch?v=qpXxcvS-g3g)*.
 
 1. Clone this repository into your Projects folder. 
 2. Once you clone this repository to your PC, navigate to your local copy of README.md and set your status from [PENDING] to [PRESENT] at the bottom of this file -- Then, commit your changes to Master. This is to test communication between the client and the remote server.
