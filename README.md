@@ -13,6 +13,6 @@
 
 **Ensure you have Unity 2019.4.0f1 (LTS).**
 
-** - Curran-H : [PRESENT]**
-** - Bobbyhead333: [PRESENT]**
-** - RISKEYDERPPY: [PENDING]**
+- Curran-H : [PRESENT]
+- Bobbyhead333: [PRESENT]
+- RISKEYDERPPY: [PENDING]
