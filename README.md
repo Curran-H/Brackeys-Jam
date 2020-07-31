@@ -4,7 +4,7 @@
 
 1. Clone this repository into your Projects folder. 
 
-  > (When the game jam starts, an administrator will initialize a unity project within this repository.)
+  > (When the game jam starts and the objective is formally decided, an administrator will initialize a unity project within this repository. Don't panic if it's still empty.)
 
 2. Once you clone this repository to your PC, navigate to your local copy of README.md and set your status from [PENDING] to [PRESENT] -- Then, commit your changes to Master.
 
