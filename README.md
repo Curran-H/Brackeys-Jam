@@ -3,6 +3,7 @@
 # INSTRUCTIONS 
 
 **Ensure you are using Github Desktop.**
+
 **Ensure you have Unity 2019.4.0f1 (LTS).**
 
 ## Set up
