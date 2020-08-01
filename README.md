@@ -1,4 +1,4 @@
-# Brackeys-Jam
+# [Brackeys-Jam](https://itch.io/jam/brackeys-4)
 
 ### **INSTRUCTIONS**
 If you've never used github before, or just need help setting up the github repository for the project (no shame), click here for a much more in-depth tutorial by *[Brackeys](https://www.youtube.com/watch?v=qpXxcvS-g3g)*.
