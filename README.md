@@ -36,4 +36,4 @@ So, at the top of the Github repository (WEBSITE ONLY), if you navigate to the I
 
 - Curran-H : [PRESENT]
 - Bobbyhead333: [PRESENT]
-- RISKEYDERPPY: [PENDING]
+- RISKEYDERPPY: [PRESENT <3]
