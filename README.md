@@ -30,7 +30,7 @@ So, at the top of the Github repository (WEBSITE ONLY), if you navigate to the I
 
 ---
 
-**Ensure you are using Github Desktop.**
+**Ensure you have and use Github Desktop.**
 
 **Ensure you have Unity 2019.4.0f1 (LTS).**
 
