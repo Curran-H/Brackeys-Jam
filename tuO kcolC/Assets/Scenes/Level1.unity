@@ -1630,5 +1630,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bean
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5974621687456112948, guid: 1c880c52d1d34974988b59d75caa44d4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1c880c52d1d34974988b59d75caa44d4, type: 3}
