@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 2116905652850013567}
   - component: {fileID: 2116905652850013566}
   m_Layer: 0
-  m_Name: Jim (Player)
+  m_Name: Jim (Obselete)
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
