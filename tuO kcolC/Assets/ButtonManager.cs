@@ -5,7 +5,7 @@ using UnityEngine;
 public class ButtonManager : MonoBehaviour
 {
     public float pressLength; //The distance that makes a press valid
-    public bool pressed; //
+    bool pressed; //
 
     Vector3 startPos; //Starting Y
     Rigidbody rb; //
@@ -23,21 +23,28 @@ public class ButtonManager : MonoBehaviour
         if (distance >= pressLength)
         {
             if (!pressed)
-            {
-                pressed = true;
+                OpenDoor();
+        }  //Detect the button downs
 
-                //Input your function call here
-                Debug.Log("Pressed!");
-            }
-            else
+        if (distance <= pressLength)
+        {
+            if (pressed)
             {
                 pressed = false;
+                Debug.Log("Unpressed.");
             }
-        }  //Detect the button ups and downs
+        }  //Detect the button ups
 
         if (transform.position.y > startPos.y)
         {
             transform.position = new Vector3(transform.position.x, startPos.y, transform.position.z);
         }  //Prevent the button's Y value from exceeding a maximum (Fixing elastic appearance unbefitting of a button)
     }
+
+    public void OpenDoor()
+    {
+        Debug.Log("Pressed!");
+        pressed = true;
+    }
+
 }
