@@ -4,16 +4,24 @@ using UnityEngine;
 
 public class ButtonManager : MonoBehaviour
 {
+    #region Variables
+
     public float pressLength; //The distance that makes a press valid
+    public string interactionTarget;
     bool pressed; //
 
     Vector3 startPos; //Starting Y
     Rigidbody rb; //
 
+    GameObject target;
+    #endregion
+
     void Start()
     {
         startPos = transform.position;
         rb = GetComponent<Rigidbody>();
+
+        target = GameObject.Find(interactionTarget);
     }
 
     void Update()
@@ -23,15 +31,14 @@ public class ButtonManager : MonoBehaviour
         if (distance >= pressLength)
         {
             if (!pressed)
-                OpenDoor();
+                OnButtonDownInteraction();
         }  //Detect the button downs
 
         if (distance <= pressLength)
         {
             if (pressed)
             {
-                pressed = false;
-                Debug.Log("Unpressed.");
+                OnButtonUpInteraction();
             }
         }  //Detect the button ups
 
@@ -41,10 +48,18 @@ public class ButtonManager : MonoBehaviour
         }  //Prevent the button's Y value from exceeding a maximum (Fixing elastic appearance unbefitting of a button)
     }
 
-    public void OpenDoor()
+    public void OnButtonDownInteraction()
     {
         Debug.Log("Pressed!");
+        target.SetActive(false);
         pressed = true;
-    }
+    } //
+
+    public void OnButtonUpInteraction()
+    {
+        Debug.Log("Unpressed.");
+        target.SetActive(true);
+        pressed = false;
+    } //
 
 }
