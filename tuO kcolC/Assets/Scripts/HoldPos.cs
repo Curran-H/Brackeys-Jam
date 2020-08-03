@@ -2,19 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class HoldPos : MonoBehaviour
 {
-    public static int playerHP;
-
     // Start is called before the first frame update
     void Start()
     {
-        playerHP = 50;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        gameObject.transform.position = gameObject.transform.parent.transform.position + gameObject.transform.parent.transform.forward * 2;
     }
 }
