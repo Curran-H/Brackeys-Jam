@@ -52,7 +52,6 @@ public class CharControl : MonoBehaviour
 
     void LookRotation()
     {
-        Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
         //Get Camera and body rotational values
