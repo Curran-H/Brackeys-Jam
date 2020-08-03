@@ -5,6 +5,7 @@ using UnityEngine;
 public class BulletBehavior : MonoBehaviour
 {
     float deleteTimer = 0f;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
