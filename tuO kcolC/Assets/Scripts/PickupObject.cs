@@ -7,8 +7,7 @@ public class PickupObject : MonoBehaviour
     public Camera cam;
     public float interactDist;
 
-    public GameObject holdPos;
-    private FixedJoint holdJoint;
+    public Transform holdPos;
     public float attractSpeed;
 
     public GameObject objectIHave;
@@ -36,12 +35,12 @@ public class PickupObject : MonoBehaviour
         {
             DropObject();
         }
-        
+
         if(hasObject)
         {
-            if (CheckDist() >= 2.1f || (CheckDist() < 0.4f && Mathf.Abs(transform.position.y) - Mathf.Abs(objectIHave.transform.position.y) > 0.51))
+            if(CheckDist() >= 1f)
             {
-                DropObject();
+                MoveObjToPos();
             }
         }
     }
@@ -52,6 +51,7 @@ public class PickupObject : MonoBehaviour
         float x = Random.Range(-0.5f, 0.5f);
         float y = Random.Range(-0.5f, 0.5f);
         float z = Random.Range(-0.5f, 0.5f);
+
         rotateVector = new Vector3(x, y, z);
     }
 
@@ -63,17 +63,14 @@ public class PickupObject : MonoBehaviour
 
     private void MoveObjToPos()
     {
-        //objectRB.MovePosition(holdPos.position);
+        objectIHave.transform.position = Vector3.Lerp(objectIHave.transform.position, holdPos.position, attractSpeed * Time.deltaTime);
     }
 
-    public void DropObject()
+    private void DropObject()
     {
-        holdPos.GetComponent<FixedJoint>().connectedBody.drag = 0f;
-        holdPos.GetComponent<FixedJoint>().connectedBody.angularDrag = 0.05f;
-        Destroy(holdPos.GetComponent<FixedJoint>());
-        objectRB.useGravity = true;
+        objectRB.constraints = RigidbodyConstraints.None;
+        objectIHave.transform.parent = null;
         objectIHave = null;
-        objectRB = null;
         hasObject = false;
     }
 
@@ -87,32 +84,15 @@ public class PickupObject : MonoBehaviour
             if (hit.collider.gameObject.CompareTag("IsPickupable"))
             {
                 objectIHave = hit.collider.gameObject;
-                //objectIHave.transform.SetParent(holdPos);
+                objectIHave.transform.SetParent(holdPos);
 
                 objectRB = objectIHave.GetComponent<Rigidbody>();
-                //objectRB.constraints = RigidbodyConstraints.FreezeAll;
-
-                holdPos.AddComponent<FixedJoint>();
-                holdPos.GetComponent<FixedJoint>().connectedBody = objectRB;
-                holdPos.GetComponent<FixedJoint>().connectedAnchor = objectIHave.transform.position;
-                holdPos.GetComponent<FixedJoint>().enableCollision = false;
-                holdPos.GetComponent<FixedJoint>().anchor = holdPos.transform.position;
-                objectRB.useGravity = false;
-
-                //objectRB.useGravity = false;
+                objectRB.constraints = RigidbodyConstraints.FreezeAll;
 
                 hasObject = true;
 
-                //CalculateRotVector();
+                CalculateRotVector();
             }
-        }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject == objectIHave)
-        {
-            DropObject();
         }
     }
 }
