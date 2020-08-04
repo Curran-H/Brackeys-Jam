@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 3880502206418362645}
   - component: {fileID: 3083975997432579223}
   - component: {fileID: -7293439975810728431}
+  - component: {fileID: -8777197261962524200}
   m_Layer: 0
   m_Name: Bean
   m_TagString: Player
@@ -267,6 +268,18 @@ MonoBehaviour:
   cam: {fileID: 5974621687456112947}
   interactDist: 10
   objectSelected: {fileID: 0}
+--- !u!114 &-8777197261962524200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5974621688391116373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6267fea6a06d5494e8fb00603ee46a39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6231549273811429934
 GameObject:
   m_ObjectHideFlags: 0

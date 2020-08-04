@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameMaster : MonoBehaviour
 {
@@ -24,20 +25,20 @@ public class GameMaster : MonoBehaviour
         if(PlayerHealth.playerHP <= 0)
         {
             PlayerHealth.playerHP = 0;
-            //if(host is not found)
+            //if(host is found)
             //{
-                GameOver();
+                RemoveHost();
             //}
             //else
             //{
-                RemoveHost();
+                GameOver();
             //}
         }
     }
 
     private void GameOver()
     {
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private void RemoveHost()
