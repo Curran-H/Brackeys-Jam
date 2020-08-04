@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 5974621688391116374}
   - component: {fileID: 3880502206418362645}
   - component: {fileID: 3083975997432579223}
+  - component: {fileID: -7293439975810728431}
   m_Layer: 0
   m_Name: Bean
   m_TagString: Player
@@ -251,6 +252,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c123edeb05f8d84f9cc068a052a3ea4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-7293439975810728431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5974621688391116373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fd40cab3d9e2c44497f39a53d97af43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 5974621687456112947}
+  interactDist: 10
+  objectSelected: {fileID: 0}
 --- !u!1 &6231549273811429934
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,6 +276,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 460279651698377527}
+  - component: {fileID: 6782694295793026558}
+  - component: {fileID: 4327193688714209786}
   m_Layer: 0
   m_Name: Hold Position
   m_TagString: Untagged
@@ -281,3 +299,31 @@ Transform:
   m_Father: {fileID: 5974621687456112945}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &6782694295793026558
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6231549273811429934}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!114 &4327193688714209786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6231549273811429934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3efd711ab69e80478a1d92b7219514a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
