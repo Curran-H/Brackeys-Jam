@@ -46,24 +46,10 @@ public class PickupObject : MonoBehaviour
         }
     }
 
-
-    private void CalculateRotVector()
-    {
-        float x = Random.Range(-0.5f, 0.5f);
-        float y = Random.Range(-0.5f, 0.5f);
-        float z = Random.Range(-0.5f, 0.5f);
-        rotateVector = new Vector3(x, y, z);
-    }
-
     public float CheckDist()
     {
         float dist = Vector3.Distance(objectIHave.transform.position, holdPos.transform.position);
         return dist;
-    }
-
-    private void MoveObjToPos()
-    {
-        //objectRB.MovePosition(holdPos.position);
     }
 
     public void DropObject()
@@ -87,23 +73,14 @@ public class PickupObject : MonoBehaviour
             if (hit.collider.gameObject.CompareTag("IsPickupable"))
             {
                 objectIHave = hit.collider.gameObject;
-                //objectIHave.transform.SetParent(holdPos);
-
                 objectRB = objectIHave.GetComponent<Rigidbody>();
-                //objectRB.constraints = RigidbodyConstraints.FreezeAll;
-
                 holdPos.AddComponent<FixedJoint>();
                 holdPos.GetComponent<FixedJoint>().connectedBody = objectRB;
                 holdPos.GetComponent<FixedJoint>().connectedAnchor = objectIHave.transform.position;
                 holdPos.GetComponent<FixedJoint>().enableCollision = false;
                 holdPos.GetComponent<FixedJoint>().anchor = holdPos.transform.position;
                 objectRB.useGravity = false;
-
-                //objectRB.useGravity = false;
-
                 hasObject = true;
-
-                //CalculateRotVector();
             }
         }
     }
