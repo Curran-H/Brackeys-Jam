@@ -1977,12 +1977,12 @@ PrefabInstance:
     - target: {fileID: 8210628206018077383, guid: a908e90615919d94dbb0c41e28f92582,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 7.8793483
+      value: 20.195723
       objectReference: {fileID: 0}
     - target: {fileID: 8210628206018077383, guid: a908e90615919d94dbb0c41e28f92582,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.02
+      value: 5.22
       objectReference: {fileID: 0}
     - target: {fileID: 8210628206736048136, guid: a908e90615919d94dbb0c41e28f92582,
         type: 3}
@@ -2043,6 +2043,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WindowGroup
+      objectReference: {fileID: 0}
+    - target: {fileID: 8210628207774707487, guid: a908e90615919d94dbb0c41e28f92582,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 19.417
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a908e90615919d94dbb0c41e28f92582, type: 3}
