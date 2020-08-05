@@ -17,6 +17,7 @@ public class GameMaster : MonoBehaviour
         {
             Debug.LogError("[ERROR] No AudioManager found in the scene!");
         }
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -42,6 +43,11 @@ public class GameMaster : MonoBehaviour
     }
 
     private void RemoveHost()
+    {
+
+    }
+
+    public void InfestHost()
     {
 
     }

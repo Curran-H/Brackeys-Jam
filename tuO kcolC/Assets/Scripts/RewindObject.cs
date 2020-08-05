@@ -8,7 +8,7 @@ public class RewindObject : MonoBehaviour
     public float interactDist;
 
     public GameObject objectSelected;
-    Color initialColor;
+    public Color initialColor;
 
     // Start is called before the first frame update
     void Start()

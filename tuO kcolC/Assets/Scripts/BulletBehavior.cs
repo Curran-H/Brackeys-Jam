@@ -29,6 +29,8 @@ public class BulletBehavior : MonoBehaviour
             PlayerHealth.playerHP -= 20;
             Debug.Log("Player HP: " + PlayerHealth.playerHP);
         }
+        else if (collision.collider.tag == "IsInfestible")
+            Debug.Log("Bullet hit enemy!");
         Destroy(gameObject);
     }
 }
