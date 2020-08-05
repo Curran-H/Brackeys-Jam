@@ -31,8 +31,7 @@ public class PickupObject : MonoBehaviour
         {
             DoRay();
         }
-
-        if (Input.GetKeyDown(KeyCode.E) && hasObject)
+        else if (Input.GetMouseButtonDown(0) && hasObject)
         {
             DropObject();
         }

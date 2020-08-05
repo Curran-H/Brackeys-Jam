@@ -7,6 +7,10 @@ public class GameMaster : MonoBehaviour
 {
     private AudioManager audioManager;
 
+    float infestTimer = 20f;
+    public bool hasHost;
+    public GameObject player;
+
     //When adding sounds, put "public static [descriptor]SoundName;" (e.g. respawnSoundName) here, and audioManager.PlaySound("[descriptor]SoundName") under the corresponding function
 
     // Start is called before the first frame update
@@ -23,18 +27,34 @@ public class GameMaster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(PlayerHealth.playerHP <= 0)
+        if (GameObject.FindGameObjectWithTag("Player").activeInHierarchy)
         {
-            PlayerHealth.playerHP = 0;
-            //if(host is found)
-            //{
+            player = GameObject.FindGameObjectWithTag("Player");
+
+            if (PlayerHealth.playerHP <= 0)
+            {
+                PlayerHealth.playerHP = 0;
+                //if(host is found)
+                //{
                 RemoveHost();
-            //}
-            //else
-            //{
+                //}
+                //else
+                //{
                 GameOver();
-            //}
+                //}
+            }
+
+            if (hasHost)
+            {
+                if (infestTimer < 20f)
+                    infestTimer += Time.deltaTime;
+                else if (infestTimer > 20f)
+                    infestTimer = 20f;
+            }
         }
+
+        if(Input.GetKeyDown(KeyCode.R))
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private void GameOver()

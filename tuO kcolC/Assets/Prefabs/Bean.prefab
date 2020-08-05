@@ -269,6 +269,7 @@ MonoBehaviour:
   cam: {fileID: 5974621687456112947}
   interactDist: 20
   objectSelected: {fileID: 0}
+  initialColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &-8777197261962524200
 MonoBehaviour:
   m_ObjectHideFlags: 0
