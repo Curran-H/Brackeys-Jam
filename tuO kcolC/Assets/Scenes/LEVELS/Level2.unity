@@ -216,6 +216,52 @@ Transform:
   m_Father: {fileID: 1229613465}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &81145260 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1699935765183224956, guid: b6728ce64f5c99749afdc8a9af9cf379,
+    type: 3}
+  m_PrefabInstance: {fileID: 234731484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1818360609 &81145262
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81145260}
+  m_Enabled: 1
+  m_Weight: 1
+  m_RotationAtRest: {x: 0, y: 0, z: -90.00001}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AffectRotationX: 1
+  m_AffectRotationY: 0
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources: []
+--- !u!1 &82926825 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1421150353013514052, guid: b6728ce64f5c99749afdc8a9af9cf379,
+    type: 3}
+  m_PrefabInstance: {fileID: 234731484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1818360609 &82926827
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82926825}
+  m_Enabled: 1
+  m_Weight: 1
+  m_RotationAtRest: {x: 20.403002, y: 0, z: -90.00001}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AffectRotationX: 1
+  m_AffectRotationY: 0
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources: []
 --- !u!1001 &87400820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -543,75 +589,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158610600}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &170797311
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 9029247218855540635, guid: fc994d7954b8569409032708f8b23403,
-        type: 3}
-      propertyPath: m_Name
-      value: PickupCube (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 9029247218855540638, guid: fc994d7954b8569409032708f8b23403,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 9029247218855540638, guid: fc994d7954b8569409032708f8b23403,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 9029247218855540638, guid: fc994d7954b8569409032708f8b23403,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 14.61
-      objectReference: {fileID: 0}
-    - target: {fileID: 9029247218855540638, guid: fc994d7954b8569409032708f8b23403,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9029247218855540638, guid: fc994d7954b8569409032708f8b23403,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9029247218855540638, guid: fc994d7954b8569409032708f8b23403,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9029247218855540638, guid: fc994d7954b8569409032708f8b23403,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9029247218855540638, guid: fc994d7954b8569409032708f8b23403,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 9029247218855540638, guid: fc994d7954b8569409032708f8b23403,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9029247218855540638, guid: fc994d7954b8569409032708f8b23403,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9029247218855540638, guid: fc994d7954b8569409032708f8b23403,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: fc994d7954b8569409032708f8b23403, type: 3}
 --- !u!1 &174837119
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,6 +901,29 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198964488}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &227697698 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 458702441301620487, guid: b6728ce64f5c99749afdc8a9af9cf379,
+    type: 3}
+  m_PrefabInstance: {fileID: 234731484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1818360609 &227697700
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227697698}
+  m_Enabled: 1
+  m_Weight: 1
+  m_RotationAtRest: {x: 0, y: 0, z: -90.00001}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AffectRotationX: 1
+  m_AffectRotationY: 0
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources: []
 --- !u!1001 &234731484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1271,7 +1271,7 @@ Transform:
   m_LocalScale: {x: 0.6224487, y: 1, z: 0.7500008}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 180}
 --- !u!1 &347328776
 GameObject:
@@ -1773,6 +1773,29 @@ Transform:
   m_Father: {fileID: 1229613465}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
+--- !u!1 &557324563 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7615573636540442115, guid: b6728ce64f5c99749afdc8a9af9cf379,
+    type: 3}
+  m_PrefabInstance: {fileID: 234731484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1818360609 &557324565
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557324563}
+  m_Enabled: 1
+  m_Weight: 1
+  m_RotationAtRest: {x: 0, y: 0, z: -90.00001}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AffectRotationX: 1
+  m_AffectRotationY: 0
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources: []
 --- !u!1 &574325881
 GameObject:
   m_ObjectHideFlags: 0
@@ -1994,6 +2017,29 @@ Transform:
   m_Father: {fileID: 365410560}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &664692174 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6728212647396854269, guid: b6728ce64f5c99749afdc8a9af9cf379,
+    type: 3}
+  m_PrefabInstance: {fileID: 234731484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1818360609 &664692176
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664692174}
+  m_Enabled: 1
+  m_Weight: 1
+  m_RotationAtRest: {x: 0, y: 0, z: -90.00001}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AffectRotationX: 1
+  m_AffectRotationY: 0
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources: []
 --- !u!1 &698302312
 GameObject:
   m_ObjectHideFlags: 0
@@ -2622,6 +2668,29 @@ Transform:
   m_Father: {fileID: 1229613465}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!1 &876492733 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7665144461755023112, guid: b6728ce64f5c99749afdc8a9af9cf379,
+    type: 3}
+  m_PrefabInstance: {fileID: 234731484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1818360609 &876492735
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876492733}
+  m_Enabled: 1
+  m_Weight: 1
+  m_RotationAtRest: {x: 20.403002, y: 0, z: -90.00001}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AffectRotationX: 1
+  m_AffectRotationY: 0
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources: []
 --- !u!1001 &877580562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2691,6 +2760,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc994d7954b8569409032708f8b23403, type: 3}
+--- !u!1 &888216787 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5785372725151605194, guid: b6728ce64f5c99749afdc8a9af9cf379,
+    type: 3}
+  m_PrefabInstance: {fileID: 234731484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1818360609 &888216789
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888216787}
+  m_Enabled: 1
+  m_Weight: 1
+  m_RotationAtRest: {x: 20.403002, y: 0, z: -90.00001}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AffectRotationX: 1
+  m_AffectRotationY: 0
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources: []
 --- !u!1001 &890133804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2780,6 +2872,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03bc416d31a84dd43809e0dacc294b30, type: 3}
+--- !u!1 &1040909229 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5632839039891812058, guid: b6728ce64f5c99749afdc8a9af9cf379,
+    type: 3}
+  m_PrefabInstance: {fileID: 234731484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1818360609 &1040909231
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040909229}
+  m_Enabled: 1
+  m_Weight: 1
+  m_RotationAtRest: {x: 0, y: 0, z: -90.00001}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AffectRotationX: 1
+  m_AffectRotationY: 0
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources: []
+--- !u!1 &1070318052 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1890665351546233121, guid: b6728ce64f5c99749afdc8a9af9cf379,
+    type: 3}
+  m_PrefabInstance: {fileID: 234731484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1818360609 &1070318054
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070318052}
+  m_Enabled: 1
+  m_Weight: 1
+  m_RotationAtRest: {x: 0, y: 0, z: -90.00001}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AffectRotationX: 1
+  m_AffectRotationY: 0
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources: []
+--- !u!1 &1114645719 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4529031636731222605, guid: b6728ce64f5c99749afdc8a9af9cf379,
+    type: 3}
+  m_PrefabInstance: {fileID: 234731484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1818360609 &1114645721
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114645719}
+  m_Enabled: 1
+  m_Weight: 1
+  m_RotationAtRest: {x: 0, y: 0, z: -90.00001}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AffectRotationX: 1
+  m_AffectRotationY: 0
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources: []
 --- !u!1 &1133991356
 GameObject:
   m_ObjectHideFlags: 0
@@ -2966,6 +3127,29 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1162327802 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1629275910947421764, guid: b6728ce64f5c99749afdc8a9af9cf379,
+    type: 3}
+  m_PrefabInstance: {fileID: 234731484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1818360609 &1162327804
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162327802}
+  m_Enabled: 1
+  m_Weight: 1
+  m_RotationAtRest: {x: 0, y: 0, z: -90.00001}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AffectRotationX: 1
+  m_AffectRotationY: 0
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources: []
 --- !u!1 &1227589260
 GameObject:
   m_ObjectHideFlags: 0
@@ -3232,6 +3416,29 @@ Transform:
   m_Father: {fileID: 1229613465}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!1 &1324766177 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5949133739404561896, guid: b6728ce64f5c99749afdc8a9af9cf379,
+    type: 3}
+  m_PrefabInstance: {fileID: 234731484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1818360609 &1324766179
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324766177}
+  m_Enabled: 1
+  m_Weight: 1
+  m_RotationAtRest: {x: 20.403002, y: 0, z: -90.00001}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AffectRotationX: 1
+  m_AffectRotationY: 0
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources: []
 --- !u!1 &1331158838
 GameObject:
   m_ObjectHideFlags: 0
@@ -3608,6 +3815,29 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366720040}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1380398535 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2886627492219803943, guid: b6728ce64f5c99749afdc8a9af9cf379,
+    type: 3}
+  m_PrefabInstance: {fileID: 234731484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1818360609 &1380398537
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380398535}
+  m_Enabled: 1
+  m_Weight: 1
+  m_RotationAtRest: {x: 0, y: 0, z: -90.00001}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AffectRotationX: 1
+  m_AffectRotationY: 0
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources: []
 --- !u!1 &1410839152
 GameObject:
   m_ObjectHideFlags: 0
@@ -3736,12 +3966,58 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419636531}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1590858993 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 548167566187683790, guid: b6728ce64f5c99749afdc8a9af9cf379,
+    type: 3}
+  m_PrefabInstance: {fileID: 234731484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1818360609 &1590858995
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590858993}
+  m_Enabled: 1
+  m_Weight: 1
+  m_RotationAtRest: {x: 20.403002, y: 0, z: -90.00001}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AffectRotationX: 1
+  m_AffectRotationY: 0
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources: []
 --- !u!4 &1666268427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 952238885273997883, guid: 90448deadf51fb34195f2dde05edbaf0,
     type: 3}
   m_PrefabInstance: {fileID: 952238886871052080}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1695724411 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5653573224685897845, guid: b6728ce64f5c99749afdc8a9af9cf379,
+    type: 3}
+  m_PrefabInstance: {fileID: 234731484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1818360609 &1695724413
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695724411}
+  m_Enabled: 1
+  m_Weight: 1
+  m_RotationAtRest: {x: 20.403002, y: 0, z: -90.00001}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AffectRotationX: 1
+  m_AffectRotationY: 0
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources: []
 --- !u!1 &1714633620
 GameObject:
   m_ObjectHideFlags: 0
@@ -4055,6 +4331,29 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1911535003 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8527757475286009149, guid: b6728ce64f5c99749afdc8a9af9cf379,
+    type: 3}
+  m_PrefabInstance: {fileID: 234731484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1818360609 &1911535005
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911535003}
+  m_Enabled: 1
+  m_Weight: 1
+  m_RotationAtRest: {x: 20.403002, y: 0, z: -90.00001}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AffectRotationX: 1
+  m_AffectRotationY: 0
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources: []
 --- !u!1 &1924894841
 GameObject:
   m_ObjectHideFlags: 0
@@ -4149,6 +4448,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 90, y: -90, z: 0}
+--- !u!1 &1937734151 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7928612938485557570, guid: b6728ce64f5c99749afdc8a9af9cf379,
+    type: 3}
+  m_PrefabInstance: {fileID: 234731484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1818360609 &1937734153
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937734151}
+  m_Enabled: 1
+  m_Weight: 1
+  m_RotationAtRest: {x: 20.403002, y: 0, z: -90.00001}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AffectRotationX: 1
+  m_AffectRotationY: 0
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources: []
 --- !u!1 &2015945036
 GameObject:
   m_ObjectHideFlags: 0
@@ -4336,6 +4658,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 90, y: 90.00001, z: 0}
+--- !u!1 &2059733330 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9133663879970046129, guid: b6728ce64f5c99749afdc8a9af9cf379,
+    type: 3}
+  m_PrefabInstance: {fileID: 234731484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1818360609 &2059733332
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059733330}
+  m_Enabled: 1
+  m_Weight: 1
+  m_RotationAtRest: {x: 0, y: 0, z: -90.00001}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AffectRotationX: 1
+  m_AffectRotationY: 0
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources: []
 --- !u!1 &2142851821
 GameObject:
   m_ObjectHideFlags: 0
