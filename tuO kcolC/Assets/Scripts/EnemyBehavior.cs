@@ -12,9 +12,9 @@ public class EnemyBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (GameObject.FindGameObjectWithTag("Player").activeInHierarchy)
+        if(GameObject.FindGameObjectWithTag("Player").activeInHierarchy)
             playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-
+        
         gameNavMesh = gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>();
     }
 
@@ -31,7 +31,15 @@ public class EnemyBehavior : MonoBehaviour
 
     void FollowPlayer()
     {
-        gameNavMesh.transform.LookAt(playerTransform);
-        gameNavMesh.destination = playerTransform.position;
+        if (playerTransform != null)
+        {
+            gameNavMesh.transform.LookAt(playerTransform);
+            gameNavMesh.destination = playerTransform.position;
+        }
+        else
+        {
+            if(GameObject.FindGameObjectWithTag("Player").activeInHierarchy)
+                playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        }
     }
 }

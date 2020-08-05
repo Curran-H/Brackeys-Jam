@@ -15,6 +15,5 @@ public class ObjectHazardCollision : MonoBehaviour
     {
         if(collision.gameObject.name == "Grinder")
             transform.position = spawnPos;
-            
     }
 }
