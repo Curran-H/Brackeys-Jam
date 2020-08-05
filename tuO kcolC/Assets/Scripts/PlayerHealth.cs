@@ -16,6 +16,6 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
-        healthText.text = "Health: " + playerHP;
+        //healthText.text = "Health: " + playerHP;
     }
 }
