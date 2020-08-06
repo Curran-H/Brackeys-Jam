@@ -38,6 +38,7 @@ public class CharControl : MonoBehaviour
     #endregion
 
     public bool grounded;
+    public bool inVent = false;
     #endregion
 
     void Update()
@@ -46,7 +47,7 @@ public class CharControl : MonoBehaviour
         Movement();
         ExtraGravity();
         GroundCheck();
-        if(grounded && Input.GetButtonDown("Jump"))
+        if(grounded && Input.GetButtonDown("Jump") && inVent == false)
             Jump();
     }
 

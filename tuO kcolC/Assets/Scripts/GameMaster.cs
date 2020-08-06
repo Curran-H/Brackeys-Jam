@@ -66,6 +66,11 @@ public class GameMaster : MonoBehaviour
 
     private void RemoveHost()
     {
+        foreach (GameObject ObjectFound in GameObject.FindGameObjectsWithTag("Player"))
+        {
+            if (ObjectFound.GetComponent<PickupObject>().hasObject)
+                ObjectFound.GetComponent<PickupObject>().DropObject();
+        }
         PlayerHealth.playerHP = 25;
         hasHost = false;
         Instantiate(parasite, player.transform.position - new Vector3(0f, 0.5f, 0f), player.transform.rotation);
@@ -73,6 +78,8 @@ public class GameMaster : MonoBehaviour
         foreach (GameObject ObjectFound in GameObject.FindGameObjectsWithTag("Player"))
         {
             ObjectFound.GetComponent<RewindObject>().initialColor = player.GetComponent<RewindObject>().initialColor;
+            if (ObjectFound.GetComponent<PickupObject>().hasObject)
+                ObjectFound.GetComponent<PickupObject>().DropObject();
         }
         foreach (GameObject ObjectFound in GameObject.FindGameObjectsWithTag("Player"))
         {

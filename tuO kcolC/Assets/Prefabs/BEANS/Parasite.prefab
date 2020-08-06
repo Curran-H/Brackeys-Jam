@@ -428,8 +428,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 7092598659950693478}
-  maxInteractDist: 5
-  minInteractDist: 2
+  maxInteractDist: 4
+  minInteractDist: 1
   holdPos: {fileID: 7092598661188503608}
   attractSpeed: 5
   objectIHave: {fileID: 0}
