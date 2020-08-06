@@ -5,7 +5,8 @@ using UnityEngine;
 public class PickupObject : MonoBehaviour
 {
     public Camera cam;
-    public float interactDist;
+    public float maxInteractDist;
+    public float minInteractDist;
 
     public GameObject holdPos;
     private FixedJoint holdJoint;
@@ -16,7 +17,7 @@ public class PickupObject : MonoBehaviour
 
     private Vector3 rotateVector = Vector3.one;
 
-    private bool hasObject = false;
+    public bool hasObject = false;
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +39,7 @@ public class PickupObject : MonoBehaviour
         
         if(hasObject)
         {
-            if (CheckDist() >= 2.1f || (CheckDist() < 0.4f && Mathf.Abs(transform.position.y) - Mathf.Abs(objectIHave.transform.position.y) > 0.51))
+            if (CheckDist() >= maxInteractDist + 1 || (CheckDist() < minInteractDist - 1 && Mathf.Abs(transform.position.y) - Mathf.Abs(objectIHave.transform.position.y) > 0.51))
             {
                 DropObject();
             }
@@ -67,19 +68,22 @@ public class PickupObject : MonoBehaviour
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
-        if(Physics.Raycast(ray, out hit, interactDist))
+        if(Physics.Raycast(ray, out hit, maxInteractDist))
         {
-            if (hit.collider.gameObject.CompareTag("IsPickupable"))
+            if (hit.distance > minInteractDist)
             {
-                objectIHave = hit.collider.gameObject;
-                objectRB = objectIHave.GetComponent<Rigidbody>();
-                holdPos.AddComponent<FixedJoint>();
-                holdPos.GetComponent<FixedJoint>().connectedBody = objectRB;
-                holdPos.GetComponent<FixedJoint>().connectedAnchor = objectIHave.transform.position;
-                holdPos.GetComponent<FixedJoint>().enableCollision = false;
-                holdPos.GetComponent<FixedJoint>().anchor = holdPos.transform.position;
-                objectRB.useGravity = false;
-                hasObject = true;
+                if (hit.collider.gameObject.CompareTag("IsPickupable"))
+                {
+                    objectIHave = hit.collider.gameObject;
+                    objectRB = objectIHave.GetComponent<Rigidbody>();
+                    holdPos.AddComponent<FixedJoint>();
+                    holdPos.GetComponent<FixedJoint>().connectedBody = objectRB;
+                    holdPos.GetComponent<FixedJoint>().connectedAnchor = objectIHave.transform.position;
+                    holdPos.GetComponent<FixedJoint>().enableCollision = false;
+                    holdPos.GetComponent<FixedJoint>().anchor = holdPos.transform.position;
+                    objectRB.useGravity = false;
+                    hasObject = true;
+                }
             }
         }
     }

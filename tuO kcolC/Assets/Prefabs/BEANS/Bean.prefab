@@ -317,10 +317,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 5974621687456112947}
-  interactDist: 2
+  maxInteractDist: 5
+  minInteractDist: 2
   holdPos: {fileID: 6231549273811429934}
   attractSpeed: 5
   objectIHave: {fileID: 0}
+  hasObject: 0
 --- !u!114 &-7293439975810728431
 MonoBehaviour:
   m_ObjectHideFlags: 0
