@@ -303,8 +303,8 @@ MonoBehaviour:
   walkSpeed: 9
   runSpeed: 14
   maxSpeed: 20
-  jumpPower: 70
-  extraGravity: 45
+  jumpPower: 30
+  extraGravity: 10
   grounded: 0
 --- !u!114 &3880502206418362645
 MonoBehaviour:
