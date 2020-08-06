@@ -10,13 +10,15 @@ public class BulletBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (GameObject.FindGameObjectWithTag("Player").activeInHierarchy)
+            player = GameObject.FindGameObjectWithTag("Player");
+        gameObject.transform.LookAt(player.transform);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position += transform.up / 2;
+        transform.position += transform.forward / 2;
         deleteTimer += Time.deltaTime;
         if (deleteTimer > 5.0f)
             Destroy(gameObject);
@@ -24,9 +26,9 @@ public class BulletBehavior : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag == "Player")
+        if (collision.collider.tag == "Player" && InvincibleFrames.isInvincible == false)
         {
-            PlayerHealth.playerHP -= 20;
+            PlayerHealth.playerHP -= 25;
             Debug.Log("Player HP: " + PlayerHealth.playerHP);
         }
         else if (collision.collider.tag == "IsInfestible")

@@ -11,11 +11,14 @@ public class PlayerHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerHP = 100;
+        if (GameObject.FindGameObjectWithTag("Player").name == "Bean")
+            PlayerHealth.playerHP = 50;
+        else if (GameObject.FindGameObjectWithTag("Player").name == "Parasite")
+            PlayerHealth.playerHP = 25;
     }
 
     private void Update()
     {
-        healthText.text = "Health: " + playerHP;
+        healthText.text = playerHP.ToString();
     }
 }

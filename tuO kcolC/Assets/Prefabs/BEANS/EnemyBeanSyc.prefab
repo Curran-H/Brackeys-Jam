@@ -64,7 +64,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -168,7 +167,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootTime: 3
-  bullet: {fileID: 8887779710531629585, guid: f26c5b12ba6e7fd4d8b39cd226988b55, type: 3}
+  gun: {fileID: 9058456922732720890}
+  bullet: {fileID: 6306012440401069771, guid: 9e514b8e7c2a18646877ffc0661c4cf1, type: 3}
   player: {fileID: 0}
 --- !u!114 &1005587044955949457
 MonoBehaviour:
@@ -237,7 +237,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -331,7 +330,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -424,7 +422,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -532,6 +529,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db23eb1456b284e49a7b31fed53a63c4, type: 3}
+--- !u!1 &9058456922732720890 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8383126179857743472, guid: db23eb1456b284e49a7b31fed53a63c4,
+    type: 3}
+  m_PrefabInstance: {fileID: 711782371138718858}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8574231638825314368 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9159486514990867658, guid: db23eb1456b284e49a7b31fed53a63c4,

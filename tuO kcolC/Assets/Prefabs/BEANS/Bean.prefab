@@ -54,7 +54,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -180,7 +179,6 @@ GameObject:
   - component: {fileID: 5974621688391116375}
   - component: {fileID: 5974621688391116374}
   - component: {fileID: 3880502206418362645}
-  - component: {fileID: 3083975997432579223}
   - component: {fileID: -7293439975810728431}
   - component: {fileID: -8777197261962524200}
   - component: {fileID: -6158888854294633662}
@@ -228,7 +226,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -324,18 +321,6 @@ MonoBehaviour:
   holdPos: {fileID: 6231549273811429934}
   attractSpeed: 5
   objectIHave: {fileID: 0}
---- !u!114 &3083975997432579223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5974621688391116373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c123edeb05f8d84f9cc068a052a3ea4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-7293439975810728431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -379,6 +364,7 @@ MonoBehaviour:
   cam: {fileID: 5974621687456112947}
   interactDist: 3
   infestTarget: {fileID: 0}
+  beanPrefab: {fileID: 5974621688391116373}
 --- !u!1 &6231549273811429934
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,7 +479,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
