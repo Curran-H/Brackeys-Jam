@@ -28,6 +28,7 @@ public class BulletBehavior : MonoBehaviour
     {
         if (collision.collider.tag == "Player" && InvincibleFrames.isInvincible == false)
         {
+            FindObjectOfType<AudioManager>().PlaySound("HitShot");
             PlayerHealth.playerHP -= 25;
             Debug.Log("Player HP: " + PlayerHealth.playerHP);
         }

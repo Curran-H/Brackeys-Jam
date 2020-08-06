@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class ButtonManager : MonoBehaviour
 {
@@ -51,6 +52,7 @@ public class ButtonManager : MonoBehaviour
     public void OnButtonDownInteraction()
     {
         Debug.Log("Pressed!");
+        FindObjectOfType<AudioManager>().PlaySound("ButtonClick");
         target.SetActive(false);
         pressed = true;
     } //
@@ -58,6 +60,7 @@ public class ButtonManager : MonoBehaviour
     public void OnButtonUpInteraction()
     {
         Debug.Log("Unpressed.");
+        FindObjectOfType<AudioManager>().PlaySound("ButtonClick");
         target.SetActive(true);
         pressed = false;
     } //
