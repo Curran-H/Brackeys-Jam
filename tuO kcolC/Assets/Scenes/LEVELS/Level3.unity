@@ -4546,6 +4546,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bean
       objectReference: {fileID: 0}
+    - target: {fileID: 5974621688391116374, guid: 1c880c52d1d34974988b59d75caa44d4,
+        type: 3}
+      propertyPath: extraGravity
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5974621688391116374, guid: 1c880c52d1d34974988b59d75caa44d4,
+        type: 3}
+      propertyPath: jumpPower
+      value: 70
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c880c52d1d34974988b59d75caa44d4, type: 3}
 --- !u!1 &1976291493
