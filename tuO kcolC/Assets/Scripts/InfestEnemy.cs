@@ -22,7 +22,7 @@ public class InfestEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.F))
+        if(Input.GetKeyDown(KeyCode.F) && !gameObject.GetComponent<PickupObject>().hasObject)
             DoRay();
     }
 
