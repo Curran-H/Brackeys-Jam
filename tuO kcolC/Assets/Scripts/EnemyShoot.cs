@@ -6,6 +6,7 @@ public class EnemyShoot : MonoBehaviour
 {
     float shootTimer = 0.0f;
     public float shootTime = 3.0f;
+    public GameObject gun;
     public GameObject bullet;
     public GameObject player;
 
@@ -29,9 +30,7 @@ public class EnemyShoot : MonoBehaviour
                 RaycastHit hit;
                 var rayDirection = player.transform.position - transform.position;
                 if (Physics.Linecast(transform.position, player.transform.position, out hit) && hit.collider.transform == player.transform)
-                {
-                    Instantiate(bullet, transform.position + (transform.forward * 0.7f), transform.rotation * new Quaternion(0.7071068f, 0, 0, 0.7071068f));
-                }
+                    Instantiate(bullet, gun.transform.position + (transform.forward * 1f), default);
             }
         }
         else

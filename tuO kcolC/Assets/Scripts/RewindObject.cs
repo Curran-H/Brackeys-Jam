@@ -13,7 +13,7 @@ public class RewindObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        initialColor = Color.clear;
     }
 
     // Update is called once per frame

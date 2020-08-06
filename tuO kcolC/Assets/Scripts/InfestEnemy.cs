@@ -8,11 +8,15 @@ public class InfestEnemy : MonoBehaviour
     public float interactDist;
 
     public GameObject infestTarget;
+    public GameObject beanPrefab;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (gameObject.name == "Bean")
+            PlayerHealth.playerHP = 50;
+        else if (gameObject.name == "Parasite")
+            PlayerHealth.playerHP = 25;
     }
 
     // Update is called once per frame
@@ -31,13 +35,14 @@ public class InfestEnemy : MonoBehaviour
         {
             if (hit.collider.gameObject.CompareTag("IsInfestible"))
             {
+                GameMaster.hasHost = true;
                 infestTarget = hit.collider.gameObject;
-                Instantiate(gameObject, infestTarget.transform.position, infestTarget.transform.rotation);
+                Instantiate(beanPrefab, infestTarget.transform.position, infestTarget.transform.rotation);
                 foreach(GameObject ObjectFound in GameObject.FindGameObjectsWithTag("Player"))
                 {
                     ObjectFound.GetComponent<RewindObject>().initialColor = gameObject.GetComponent<RewindObject>().initialColor;
                 }
-                PlayerHealth.playerHP = 100;
+                PlayerHealth.playerHP = 50;
                 Destroy(infestTarget);
                 Destroy(gameObject);
             }
