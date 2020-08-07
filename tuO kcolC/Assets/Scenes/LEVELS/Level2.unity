@@ -3820,27 +3820,41 @@ PrefabInstance:
     - target: {fileID: 3427607832891106342, guid: a5c097f5ce59e8e43bbbdf82ed58d4e0,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 3427607832891106342, guid: a5c097f5ce59e8e43bbbdf82ed58d4e0,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 0
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3427607832891106342, guid: a5c097f5ce59e8e43bbbdf82ed58d4e0,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3427607832891106342, guid: a5c097f5ce59e8e43bbbdf82ed58d4e0,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3427607832891106342, guid: a5c097f5ce59e8e43bbbdf82ed58d4e0,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3427607832891106342, guid: a5c097f5ce59e8e43bbbdf82ed58d4e0,
+        type: 3}
+      propertyPath: m_text
+      value: 'Esc: Exit to main menu
+
+        Hold Shift: Sprint
+
+        RMB: Select
+        object
+
+        Hold G: Rewind Selected Object
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 3427607832891106346, guid: a5c097f5ce59e8e43bbbdf82ed58d4e0,
         type: 3}
