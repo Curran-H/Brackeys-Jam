@@ -7,6 +7,7 @@ TagManager:
   - IsPickupable
   - Environment
   - IsInfestible
+  - Hazard
   layers:
   - Default
   - TransparentFX

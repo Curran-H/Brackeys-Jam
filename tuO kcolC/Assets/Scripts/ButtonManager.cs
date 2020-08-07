@@ -15,6 +15,8 @@ public class ButtonManager : MonoBehaviour
     Rigidbody rb; //
 
     GameObject target;
+    public AudioClip buttonClick;
+    public AudioSource aSource;
     #endregion
 
     void Start()
@@ -52,17 +54,21 @@ public class ButtonManager : MonoBehaviour
     public void OnButtonDownInteraction()
     {
         Debug.Log("Pressed!");
-        FindObjectOfType<AudioManager>().PlaySound("ButtonClick");
-        target.SetActive(false);
+        if (target != null)
+            target.SetActive(false);
         pressed = true;
+        if (aSource.isPlaying == false && pressed == true)
+            aSource.PlayOneShot(aSource.clip);
     } //
 
     public void OnButtonUpInteraction()
     {
         Debug.Log("Unpressed.");
-        FindObjectOfType<AudioManager>().PlaySound("ButtonClick");
-        target.SetActive(true);
+        if(target != null)
+            target.SetActive(true);
         pressed = false;
+        if (aSource.isPlaying == false && pressed == false)
+            aSource.PlayOneShot(aSource.clip);
     } //
 
 }

@@ -10,6 +10,9 @@ public class EnemyShoot : MonoBehaviour
     public GameObject bullet;
     public GameObject player;
 
+    public AudioClip laserShoot;
+    public AudioSource aSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +34,7 @@ public class EnemyShoot : MonoBehaviour
                 var rayDirection = player.transform.position - transform.position;
                 if (Physics.Linecast(transform.position, player.transform.position, out hit) && hit.collider.transform == player.transform)
                 {
-                    FindObjectOfType<AudioManager>().PlaySound("LaserShoot");
+                    aSource.PlayOneShot(laserShoot);
                     Instantiate(bullet, gun.transform.position + (transform.forward * 1f), default);
                 }
             }
