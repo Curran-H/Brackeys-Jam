@@ -6,7 +6,7 @@ public class PlayerHazardCollision : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "Grinder")
+        if (collision.gameObject.tag == "Hazard")
             PlayerHealth.playerHP = 0;
     }
 }
