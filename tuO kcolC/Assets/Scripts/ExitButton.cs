@@ -10,10 +10,10 @@ public class ExitButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        startButton.onClick.AddListener(exitGame);
+        startButton.onClick.AddListener(ExitGame);
     }
 
-    void exitGame()
+    void ExitGame()
     {
         Application.Quit();
     }

@@ -13,7 +13,7 @@ public class ObjectHazardCollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.name == "Grinder")
+        if (collision.gameObject.tag == "Hazard")
             transform.position = spawnPos;
     }
 }
