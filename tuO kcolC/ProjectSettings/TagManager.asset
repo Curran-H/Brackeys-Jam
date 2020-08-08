@@ -8,6 +8,7 @@ TagManager:
   - Environment
   - IsInfestible
   - Hazard
+  - TimerText
   layers:
   - Default
   - TransparentFX

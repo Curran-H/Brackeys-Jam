@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class AirVent : MonoBehaviour
 {
-    public bool airUp;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -23,11 +21,14 @@ public class AirVent : MonoBehaviour
         Debug.Log("Vent collision detected!");
         if (other.gameObject.tag == "Player" || other.gameObject.tag == "IsPickupable" || other.gameObject.tag == "IsInfestible")
         {
-            if(other.gameObject.tag == "Player")
+            if (other.gameObject.tag == "Player")
+            {
                 other.gameObject.GetComponent<CharControl>().inVent = true;
+                other.gameObject.GetComponent<Rigidbody>().useGravity = false;
+            }
             Debug.Log("Vent collision tag detection successful!");
             other.gameObject.transform.position += gameObject.transform.up * 0.2f;
-            other.gameObject.GetComponent<Rigidbody>().useGravity = false;
+            
         }
     }
 

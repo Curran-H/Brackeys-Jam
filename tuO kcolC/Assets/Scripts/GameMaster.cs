@@ -55,8 +55,10 @@ public class GameMaster : MonoBehaviour
         if (DeathTimer.deathTimer <= 0f)
             GameOver();
 
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) && SceneManager.GetActiveScene().buildIndex != 10)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (Input.GetKeyDown(KeyCode.Escape))
+            SceneManager.LoadScene(0);
     }
 
     private void GameOver()
