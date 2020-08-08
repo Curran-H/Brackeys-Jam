@@ -21,7 +21,10 @@ public class GameMaster : MonoBehaviour
         {
             Debug.LogError("[ERROR] No AudioManager found in the scene!");
         }
-        Cursor.visible = false;
+        if(SceneManager.GetActiveScene().buildIndex > 0)
+            Cursor.visible = false;
+        else
+            Cursor.visible = true;
 
         player = GameObject.FindGameObjectWithTag("Player");
 
